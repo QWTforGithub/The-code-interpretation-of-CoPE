@@ -16,7 +16,7 @@ class CoPE(nn.Module):
         '''
             CoPE实现
         :param C: 每个头的通道维度
-        :param T:
+        :param T: 最大的上下文长度
         '''
         super().__init__()
         self.T = T if(T is not None) else C
